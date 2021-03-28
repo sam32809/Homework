@@ -1,0 +1,24 @@
+//6번 문제
+
+#include <iostream>
+using namespace std;
+
+class Rectangle {
+public:
+	double h, v;
+
+	Rectangle(int a, int  b) {
+		h = a;
+		v = b;
+	}
+	double calcArea() {
+		return h * v;
+	}
+};
+
+int main() {
+	Rectangle r{ 3,4 };
+
+	cout << "사각형의 넓이 : " << r.calcArea() << '\n';
+	return 0;
+}
